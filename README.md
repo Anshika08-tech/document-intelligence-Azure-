@@ -58,7 +58,7 @@ Open your terminal or command prompt and run:
 git clone [https://github.com/Anshika08-tech/](https://github.com/Anshika08-tech/)[repository-name].git
 cd [repository-name]
 
-Create a Virtual Environment (Recommended)
+2. Create a Virtual Environment (Recommended)
 It is best practice to use a virtual environment to manage your project dependencies and avoid conflicts.
 
 # On Windows
@@ -68,3 +68,29 @@ venv\Scripts\activate
 # On macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
+
+3. Install Dependencies
+
+Once your virtual environment is activated, install the required Python libraries:
+pip install -r requirements.txt
+
+4. Configure Environment Variables
+
+To connect to Azure, you must provide your secure API credentials.
+
+In the root directory, locate the .env.example file.
+
+Rename it to .env (or create a new file named .env).
+
+Open the .env file and add your Azure endpoint and key:
+
+AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT="your_azure_endpoint_url_here"
+AZURE_DOCUMENT_INTELLIGENCE_KEY="your_azure_api_key_here"
+Security Warning: Never hardcode your API keys directly into your Python scripts, and ensure your .env file is listed in your .gitignore so your keys are not accidentally uploaded to GitHub.
+
+5. Run the Project
+
+Place a sample document (PDF, PNG, or JPEG) inside the data/raw/ directory.
+
+Execute the extraction script:
+python src/extract.py

@@ -26,26 +26,19 @@ Key features:
 * Jupyter Notebook: For interactive testing and visualization of extracted data.
 
 document-intelligence-project/
-│
+document-intelligence-project/
 ├── data/                   # Store your sample files here
 │   ├── raw/                # Unprocessed documents (PDFs, JPEGs, invoices)
 │   └── processed/          # Extracted JSON outputs or CSVs
-
-│
 ├── notebooks/              # Jupyter notebooks for testing and visualizing
 │   └── exploration.ipynb   # Good for prototyping API calls
-│
-
 ├── src/                    # Your main Python source code
 │   ├── __init__.py
 │   ├── config.py           # Loads API keys and endpoints
 │   ├── extract.py          # Functions calling Azure Document Intelligence
 │   └── process.py          # Functions to clean and structure the data (Pandas)
-│
 ├── tests/                  # Unit tests to ensure your code works
 │   └── test_extraction.py
-
-│
 ├── .env                    # Your actual API keys (NEVER upload to GitHub)
 ├── .env.example            # A template showing what keys are needed
 ├── .gitignore              # Tells Git which files to ignore

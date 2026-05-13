@@ -94,3 +94,8 @@ Place a sample document (PDF, PNG, or JPEG) inside the data/raw/ directory.
 
 Execute the extraction script:
 python src/extract.py
+
+API endpoints
+
+POST: To submit documents for analysis or to command Azure to build/compose a new custom model.  
+GET: To retrieve the analysis results, list your models, or check the status of a job.

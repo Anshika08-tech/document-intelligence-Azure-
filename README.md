@@ -30,10 +30,12 @@ document-intelligence-project/
 ├── data/                   # Store your sample files here
 │   ├── raw/                # Unprocessed documents (PDFs, JPEGs, invoices)
 │   └── processed/          # Extracted JSON outputs or CSVs
+
 │
 ├── notebooks/              # Jupyter notebooks for testing and visualizing
 │   └── exploration.ipynb   # Good for prototyping API calls
 │
+
 ├── src/                    # Your main Python source code
 │   ├── __init__.py
 │   ├── config.py           # Loads API keys and endpoints
@@ -42,6 +44,7 @@ document-intelligence-project/
 │
 ├── tests/                  # Unit tests to ensure your code works
 │   └── test_extraction.py
+
 │
 ├── .env                    # Your actual API keys (NEVER upload to GitHub)
 ├── .env.example            # A template showing what keys are needed
